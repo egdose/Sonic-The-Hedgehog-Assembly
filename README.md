@@ -1,6 +1,9 @@
 # COAL Project – MASM Game Implementation
 
-This repository contains my **Computer Organization and Assembly Language (COAL)** project from Fall 2019.
+This repository contaiI designed **custom pixel fonts** to display menu text like "PLAY", "INSTRUCTION", and "EXIT".
+
+![Design of custom characters in pixel format](static/PhotoshopCharacterPixelArt.PNG)
+*Design of custom characters in pixel format.*my **Computer Organization and Assembly Language (COAL)** project from Fall 2019.
 The project was implemented in **MASM** and run using **DOSBox**. It is based on the course requirement to create a **menu-based side-scroller game** inspired by the offline Chrome T-Rex game.
 
 The project makes heavy use of **pixel art sprites** stored in static arrays in memory and rendered using low-level VGA routines.
@@ -49,8 +52,11 @@ The project fulfilled all base requirements from the assignment:contentReference
 
 All 2D sprites and characters were stored as **static arrays** in assembly memory.
 
-- [ArrayPixelArt.PNG](static/ArrayPixelArt.PNG) – shows pixel-level sprite definition.
-- [ArrayPixelPrint.PNG](static/ArrayPixelPrint.PNG) – rendering output in assembly.
+![Pixel-level sprite definition](static/ArrayPixelArt.PNG)
+_Shows pixel-level sprite definition._
+
+![Rendering output in assembly](static/ArrayPixelPrint.PNG)
+_Rendering output in assembly._
 
 ---
 
@@ -59,7 +65,8 @@ All 2D sprites and characters were stored as **static arrays** in assembly memor
 Since MASM supported only **16 VGA colors**, I converted colored images to fit this limited palette.
 This was done using a mix of **Python scripts** and **Photoshop**, although the original Python code was lost.
 
-- [vgapalette.png](static/vgapalette.png) – reference VGA palette used.
+![Reference VGA palette used](static/vgapalette.png)
+_Reference VGA palette used._
 
 ---
 
@@ -75,7 +82,7 @@ I designed **custom pixel fonts** to display menu text like “PLAY”, “INSTR
 
 Menu layouts were first designed in Photoshop and then mapped into the assembly coordinate system using the canvas grid as reference.
 
-- [PhotoshopMainMenu.PNG](static/PhotoshopMainMenu.PNG) – final design reference.
+![Final design reference](static/PhotoshopMainMenu.PNG)
 
 ---
 
@@ -94,7 +101,8 @@ Sprites and fonts quickly exceeded this limit since **each color value was store
   - Bomb, Pokémon, Tank, Angry Bird, and Cloud sprites
 - Result: **Less memory usage without losing quality**.
 
-- [ShrinkedvsNormalArray.PNG](static/ShrinkedvsNormalArray.PNG) – comparison of normal vs compressed arrays. Notice how the optimized version is visibly denser (shrunk horizontally).
+![Comparison of normal vs compressed arrays](static/ShrinkedvsNormalArray.PNG)
+_Comparison of normal vs compressed arrays. Notice how the optimized version is visibly denser (shrunk horizontally)._
 
 ---
 

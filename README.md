@@ -30,7 +30,7 @@ The project makes heavy use of **pixel art sprites** stored in static arrays in 
 
 ## Base Requirements Implemented
 
-The project fulfilled all base requirements from the assignment:contentReference[oaicite:1]{index=1}:
+The project fulfilled all base requirements from the assignment
 
 - Menu-based navigation (**Play**, **Instructions**, **Exit**)
 - Instructions loaded dynamically from a text file (`fileins.txt`)
@@ -49,8 +49,8 @@ The project fulfilled all base requirements from the assignment:contentReference
 
 All 2D sprites and characters were stored as **static arrays** in assembly memory.
 
-- [ArrayPixelArt.PNG](static/ArrayPixelArt.PNG) – shows pixel-level sprite definition.
-- [ArrayPixelPrint.PNG](static/ArrayPixelPrint.PNG) – rendering output in assembly.
+![shows pixel-level sprite definition](static/ArrayPixelArt.PNG)
+![rendering output in assembly](static/ArrayPixelPrint.PNG)
 
 ---
 
@@ -59,7 +59,8 @@ All 2D sprites and characters were stored as **static arrays** in assembly memor
 Since MASM supported only **16 VGA colors**, I converted colored images to fit this limited palette.
 This was done using a mix of **Python scripts** and **Photoshop**, although the original Python code was lost.
 
-- [vgapalette.png](static/vgapalette.png) – reference VGA palette used.
+![vgapalette.png](static/vgapalette.png)
+– reference VGA palette used.
 
 ---
 
@@ -67,7 +68,8 @@ This was done using a mix of **Python scripts** and **Photoshop**, although the 
 
 I designed **custom pixel fonts** to display menu text like “PLAY”, “INSTRUCTION”, and “EXIT”.
 
-- [PhotoshopCharacterPixelArt.PNG](static/PhotoshopCharacterPixelArt.PNG) – design of custom characters in pixel format.
+![PhotoshopCharacterPixelArt.PNG](static/PhotoshopCharacterPixelArt.PNG)
+– design of custom characters in pixel format.
 
 ---
 
@@ -75,7 +77,8 @@ I designed **custom pixel fonts** to display menu text like “PLAY”, “INSTR
 
 Menu layouts were first designed in Photoshop and then mapped into the assembly coordinate system using the canvas grid as reference.
 
-- [PhotoshopMainMenu.PNG](static/PhotoshopMainMenu.PNG) – final design reference.
+![PhotoshopMainMenu.PNG](static/PhotoshopMainMenu.PNG)
+– final design reference.
 
 ---
 
@@ -94,7 +97,9 @@ Sprites and fonts quickly exceeded this limit since **each color value was store
   - Bomb, Pokémon, Tank, Angry Bird, and Cloud sprites
 - Result: **Less memory usage without losing quality**.
 
-- [ShrinkedvsNormalArray.PNG](static/ShrinkedvsNormalArray.PNG) – comparison of normal vs compressed arrays. Notice how the optimized version is visibly denser (shrunk horizontally).
+![ShrinkedvsNormalArray.PNG](static/ShrinkedvsNormalArray.PNG)
+
+– comparison of normal vs compressed arrays. Notice how the optimized version is visibly denser (shrunk horizontally).
 
 ---
 

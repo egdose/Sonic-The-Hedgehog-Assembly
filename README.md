@@ -102,7 +102,7 @@ Sprites and fonts quickly exceeded this limit since **each color value was store
 
 You can watch the demo video below:
 
-[![Demo Video](static/demo_snapshot.PNG)](static/demo_VP8.webm)
+[![Demo Video](static/demo_snapshot.png)](static/demo_VP8.webm)
 _(click to play, recorded on DOSBox at high clockspeed)_
 
 **Note:** The jitter in sprites is due to the **scanline rendering method**. Each frame redraws the background before rendering the next sprite frame, which appears jumpy at higher DOSBox cycles.
